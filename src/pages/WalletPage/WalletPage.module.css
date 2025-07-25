@@ -1,0 +1,58 @@
+.walletPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.balanceSummary {
+  margin-bottom: 30px;
+}
+
+.currencyCards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .mainContent {
+    flex-direction: row;
+  }
+  
+  .balanceSummary {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  
+  .actions {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}

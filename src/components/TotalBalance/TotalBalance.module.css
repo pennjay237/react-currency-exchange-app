@@ -1,0 +1,20 @@
+.totalContainer {
+  background-color: #4a90e2;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.totalTitle {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.totalAmount {
+  font-size: 28px;
+  font-weight: 700;
+}

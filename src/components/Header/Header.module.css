@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.selectorContainer {
+  display: flex;
+  align-items: center;
+}
+
+.selectorLabel {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.select {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+}
