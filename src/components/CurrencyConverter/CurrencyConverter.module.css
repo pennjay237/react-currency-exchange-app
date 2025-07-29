@@ -4,6 +4,8 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
   margin: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .converterTitle {
@@ -15,12 +17,14 @@
 
 .converterRow {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 15px;
 }
 
 .column {
-  flex: 1;
+  flex: 1 1 300px;
+  min-width: 250px;
 }
 
 .inputGroup {
@@ -79,4 +83,42 @@
 
 .button:hover {
   background-color: #357ae8;
+}
+
+@media (max-width: 768px) {
+  .converterTitle {
+    font-size: 18px;
+  }
+
+  .result {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .converterRow {
+    flex-direction: column;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  .input {
+    font-size: 15px;
+  }
+
+  .converterTitle {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

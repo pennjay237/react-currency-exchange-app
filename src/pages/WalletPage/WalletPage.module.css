@@ -13,6 +13,7 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .balanceSummary {
@@ -23,11 +24,12 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+  gap: 20px;
 }
 
 .actions {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
@@ -43,16 +45,39 @@
   .mainContent {
     flex-direction: row;
   }
-  
+
   .balanceSummary {
     flex: 1;
     margin-right: 20px;
     margin-bottom: 0;
   }
-  
+
   .actions {
     flex: 1;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .currencyCards {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+
+  .actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContent {
+    padding: 15px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 12px;
   }
 }

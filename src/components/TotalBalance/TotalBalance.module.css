@@ -6,6 +6,8 @@
   text-align: center;
   margin: 20px 0;
   box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .totalTitle {
@@ -17,4 +19,28 @@
 .totalAmount {
   font-size: 28px;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .totalTitle {
+    font-size: 16px;
+  }
+
+  .totalAmount {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .totalTitle {
+    font-size: 15px;
+  }
+
+  .totalAmount {
+    font-size: 22px;
+  }
+
+  .totalContainer {
+    padding: 16px;
+  }
 }
