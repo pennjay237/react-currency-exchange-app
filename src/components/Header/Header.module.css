@@ -26,7 +26,9 @@
 .selectorContainer {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
+
+  gap: 68px;
 }
 
 .selectorLabel {
@@ -80,6 +82,5 @@
 
   .select {
     font-size: 14px;
-    padding: 6px 10px;
   }
 }
