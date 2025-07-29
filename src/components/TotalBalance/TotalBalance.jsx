@@ -4,7 +4,12 @@ import { formatCurrency } from '../../utils/currencyUtils';
 
 const TotalBalance = ({ total, currency }) => {
   return (
-   
+    <div className={styles.totalContainer}>
+      <h3 className={styles.totalTitle}>OverAll  Total Balance</h3>
+      <div className={styles.totalAmount}>
+        {formatCurrency(total, currency)}
+      </div>
+    </div>
   );
 };
 
