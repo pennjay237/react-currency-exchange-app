@@ -39,7 +39,7 @@ const WalletPage = () => {
       </main>
       
       <footer className={styles.footer}>
-        <p>© 2025 Jude'sMultiCurrency Wallet. All rights reserved.</p>
+        <p>© 2025 Jude'sCurrency Exchange Wallet. All rights reserved.</p>
       </footer>
     </div>
   );

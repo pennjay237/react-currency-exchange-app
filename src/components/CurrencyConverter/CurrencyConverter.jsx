@@ -65,7 +65,7 @@ const CurrencyConverter = () => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.label}>Amount to convert</label>
+          <label className={styles.label}>Enter Amount to convert</label>
           <input
             type="number"
             value={amount}
@@ -89,7 +89,7 @@ const CurrencyConverter = () => {
         )}
 
         <button type="submit" className={styles.button}>
-          Exchange
+          Exchange currency 
         </button>
       </form>
     </div>

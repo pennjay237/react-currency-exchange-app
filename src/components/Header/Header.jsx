@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <h1>MultiCurrency Wallet</h1>
+        <h1>Currency Exchange Wallet</h1>
       </div>
       
       <div className={styles.controls}>
