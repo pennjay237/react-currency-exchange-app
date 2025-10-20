@@ -1,38 +1,50 @@
+/* ========== Base Layout ========== */
 .formContainer {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  margin: 10px;
-  max-width: 100%;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 100%;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
+/* --- Title --- */
 .formTitle {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #2c3e50;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
 }
 
+/* --- Input Group --- */
 .inputGroup {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
+/* --- Label --- */
 .label {
   display: block;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   color: #333;
+  font-size: 15px;
 }
 
+/* --- Input --- */
 .input {
   width: 100%;
-  padding: 10px 15px;
+  padding: 12px 16px;
   border-radius: 8px;
   border: 1px solid #ddd;
   font-size: 16px;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
   box-sizing: border-box;
 }
 
@@ -42,32 +54,48 @@
   box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
 }
 
+/* --- Error --- */
 .error {
   color: #e74c3c;
-  margin: 10px 0;
+  margin-top: 8px;
   font-weight: 500;
+  font-size: 14px;
 }
 
+/* --- Button --- */
 .button {
   background-color: #27ae60;
   color: white;
   border: none;
   border-radius: 8px;
-  padding: 12px 20px;
+  padding: 14px 20px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   width: 100%;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s ease;
 }
 
 .button:hover {
   background-color: #219653;
+  transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
+.button:active {
+  transform: translateY(0);
+}
+
+/* ========== Responsive Breakpoints ========== */
+
+/* --- Tablets (≤992px) --- */
+@media (max-width: 992px) {
+  .formContainer {
+    max-width: 500px;
+    padding: 25px;
+  }
+
   .formTitle {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .input {
@@ -76,11 +104,44 @@
 
   .button {
     font-size: 15px;
+    padding: 12px 18px;
+  }
+}
+
+/* --- Mobile Landscape (≤768px) --- */
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .formTitle {
+    font-size: 18px;
+  }
+
+  .label {
+    font-size: 14.5px;
+  }
+
+  .input {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  .button {
+    font-size: 15px;
     padding: 10px 16px;
   }
 }
 
+/* --- Mobile Portrait (≤480px) --- */
 @media (max-width: 480px) {
+  .formContainer {
+    padding: 18px 15px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
   .formTitle {
     font-size: 16px;
   }
@@ -91,11 +152,32 @@
 
   .input {
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 9px 12px;
   }
 
   .button {
     font-size: 14px;
     padding: 10px;
+  }
+}
+
+/* --- Extra Small Devices (≤360px) --- */
+@media (max-width: 360px) {
+  .formContainer {
+    padding: 15px 10px;
+  }
+
+  .formTitle {
+    font-size: 15px;
+  }
+
+  .input {
+    font-size: 13.5px;
+    padding: 8px 10px;
+  }
+
+  .button {
+    font-size: 13.5px;
+    padding: 9px 12px;
   }
 }

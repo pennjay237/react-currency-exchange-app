@@ -14,7 +14,7 @@ const Header = () => {
       
       <div className={styles.controls}>
         <div className={styles.selectorContainer}>
-          <span className={styles.selectorLabel}>Default Currency:</span>
+          <span className={styles.selectorLabel}>Choose Default Currency:</span>
           <CurrencySelector 
             value={defaultCurrency}
             onChange={setDefault}
